@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="about-section">
+  <h1>About Us Page</h1>
+  <p>Some text about who we are and what we do.</p>
+  <p>Resize the browser window to see that this page is responsive by the way.</p>
+  <p>
+    Airplanes have flexible wing surfaces which are stretched across a frame and made rigid by the lift forces exerted by the airflow over them. Larger aircraft have rigid wing surfaces which provide additional strength.
+    
+    Whether flexible or rigid, most wings have a strong frame to give them their shape and to transfer lift from the wing surface to the rest of the aircraft. The main structural elements are one or more spars running from root to tip, and many ribs running from the leading (front) to the trailing (rear) edge.
+    
+    Early airplane engines had little power, and lightness was very important. Also, early airfoil sections were very thin, and could not have a strong frame installed within. So, until the 1930s, most wings were too lightweight to have enough strength, and external bracing struts and wires were added. When the available engine power increased during the 1920s and 30s, wings could be made heavy and strong enough that bracing was not needed any more. This type of unbraced wing is called a cantilever wing.
+    
+    </p>
+</div>
+
+<h2 style="text-align:center">Our branchs</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="./aero.image.webp" alt="Jane" style="width: 100%;">
+      <div class="container">
+        <h2>Airframe</h2>
+        <p class="title">Airframe contact</p>
+        <p>Some text that describes about Airframe.</p>
+        <p>Airframe@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="./airlane.image.jpg" alt="Mike" style="width: 100%;">
+      <div class="container">
+        <h2>JET</h2>
+        <p class="title">JET Aboutus</p>
+        <p>Some text that describes about JET.</p>
+        <p>Jet@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="./flight.jpg" alt="John" style="width:100%">
+      <div class="container">
+        <h2>Airlane</h2>
+        <p class="title">Registration counter</p>
+        <p>Some text that describes about Airlane.</p>
+        <p>Airline@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
